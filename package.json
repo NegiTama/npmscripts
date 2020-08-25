@@ -10,7 +10,7 @@
     "clean/css": "rimraf dist/assets/css && mkdir -p dist/assets/css",
     "css": "npm run clean/css && npm-run-all -p css/*",
     "images/imagemin": "node imagemin.js",
-    "clean/images": "rimraf dist/assets/img && midir -p dist/assets/img",
+    "clean/images": "rimraf dist/assets/img && mkdir -p dist/assets/img",
     "images": "npm run clean/images && npm-run-all -s images/*",
     "watch/css": "watch 'npm run css' ./src/assets/sass",
     "watch": "npm-run-all -p watch/*"

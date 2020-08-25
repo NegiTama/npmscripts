@@ -1,0 +1,10 @@
+=radius($px)
+  border-radius: $px
+
+=radius_corner($px_tl, $px_tr, $px_br, $px_bl)
+  border-radius: $px_tl, $px_tr, $px_br, $px_bl
+
+// font class=f50 ~ f200
+@for $i from 5 through 20
+  .f#{$i*10}
+    font-size: #{$i*10 + "%!important"}
